@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public Text countText;
     public Text winText;
-    public float deathSize = 0.2f;
+    //public float deathSize = 0.2f;
     [Range(0.0f, 1.0f)] public float shrinkSpeed = 0.01f; 
     [Range(0.0f, 10.0f)] public float growAmount = 1f;
 
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
         rb.AddForce (movement * speed);
 
         // Make player smaller over time
-        if (!wonGame)
+        /*if (!wonGame)
         {
             transform.localScale -= Vector3.one * shrinkSpeed;
             if (transform.localScale.x <= deathSize)
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour {
                 winText.text = "You died :(";
                 Destroy(gameObject);
             }    
-        }
+        }*/
     }
     
     void OnTriggerEnter (Collider other)

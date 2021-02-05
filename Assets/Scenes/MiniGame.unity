@@ -204,6 +204,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 113102553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &143171973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143171974}
+  m_Layer: 0
+  m_Name: JoeJeffControllerSnapLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143171974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143171973}
+  m_LocalRotation: {x: -0.12048112, y: -0.7092059, z: -0.12505229, w: 0.6832812}
+  m_LocalPosition: {x: -5.3069997, y: -10.127999, z: 14.348999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 648676561}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306876218
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,36 +386,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
---- !u!1 &395517681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 395517682}
-  m_Layer: 0
-  m_Name: buggyControllerSnapLocation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &395517682
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395517681}
-  m_LocalRotation: {x: -0.08197302, y: -0.71468097, z: -0.08793877, w: 0.6890416}
-  m_LocalPosition: {x: -5.33, y: -10.127999, z: 14.139999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 648676561}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -13.753, y: -2.0040002, z: -0.23}
 --- !u!1 &451671081
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +614,7 @@ Transform:
   m_Children:
   - {fileID: 4000011914408630}
   - {fileID: 758052183}
-  - {fileID: 395517682}
+  - {fileID: 143171974}
   m_Father: {fileID: 676766214}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1382,7 +1382,6 @@ MonoBehaviour:
   speed: 5
   countText: {fileID: 1709312623}
   winText: {fileID: 1709312623}
-  deathSize: 0.4
   shrinkSpeed: 0.002
   growAmount: 0.25
 --- !u!54 &1173826010
